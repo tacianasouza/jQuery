@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Evento KeyPress</title>
+		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+	</head>
+
+	<body>	
+		<form>
+			<label>Digite um texto aqui:</label><br/>
+			<input type = "text" id = "txt">
+		</form>
+		<p></p>
+
+		<script type="text/javascript">
+			$('#txt').keypress(function(event) {
+				$('p').text($('#txt').val());
+			});
+		</script>
+	</body>
+</html>

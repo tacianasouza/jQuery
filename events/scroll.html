@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Evento Scroll</title>
+
+	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+	
+	<script type="text/javascript">
+		var num = 0;
+		$(document).ready(function() {
+			$("div").scroll(function() {
+				$("p").text(num+=1);
+			});
+		});
+
+	</script>
+
+</head>
+<body>
+	<div style = "border: 1px solid #000; width: 300px; height: 100px; overflow: scroll;">
+		Apostila de jQuery, material exclusivo do Canal Fessor Bruno. <br>
+		Assine nosso canal no youtube.com/canalfessorbruno e curta nossos vídeos. <br>
+		Acesse também nosso site e baixe nosso material exclusivo.
+	</div>
+	
+	<p>0</p>
+
+</body>
+</html>

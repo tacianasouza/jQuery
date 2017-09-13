@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Evento Change</title>
+
+		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('input:text').change(function() {
+					$('p').text("O texto original foi alterado");
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<label>Insira aqui um Exemplo:</label><br>
+		<input type = "text" id = "txt_nome" value = "Experimente o change!">
+		<p></p>
+	</body>
+
+</html>

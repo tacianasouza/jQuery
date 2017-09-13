@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Event Which</title>
+		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+	</head>
+	<body>
+		<input id = "tecla" value = "Digite algo">
+		<div id = "txt"></div>
+
+		<script type="text/javascript">
+			$("#tecla").keydown(function(event) {
+				$("$txt").html(event.type+":  "+event.which);
+			})
+			.click(function() {
+				$(this).val("");
+			});
+		</script>
+	</body>
+</html>

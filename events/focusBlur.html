@@ -1,0 +1,31 @@
+<!--
+	focus: elemento do formulário está selecionado
+	blur:  elemento do formulário deixa de estar selecionado	
+-->
+<!DOCTYPE html>
+<html lang = "pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Evento Focus e Blur </title>
+
+		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('input:text').focus(function() {
+					$('p').text("Cursor está dentro da caixa de texto");
+				})
+				.blur(function() {
+					$('p').text("Cursor deixou a caixa de texto");
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<label>Digite seu nome:</label><br>
+		<input type = "text" id = "txt_nome">
+		<p></p>			
+	</body>
+
+</html>

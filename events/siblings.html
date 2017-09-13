@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Referências aos elementos irmãos</title>
+		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("h2").siblings().css({"border":"1px solid #f00"});
+			});
+		</script>
+
+		<style type="text/css">
+			span {
+				display: block;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div style = "width: 400px;">div
+			<p>p</p>
+			<span>span</span>
+			<h1>h1</h1>
+			<h2>h2</h2>
+			<p>p</p>
+		</div>
+	</body>
+</html>

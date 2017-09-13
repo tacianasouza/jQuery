@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Evento Select</title>
+
+		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+		
+	</head>
+	
+	<body>
+		<form>
+			<label>Digite seu nome:</label><br>
+			<input type = "text" id = "f_nome"><br><br>
+			<label>Digite sua idade:</label><br>
+			<input type = "text" id = "f_idade"><br><br>
+			<label>Módulo favorito:</label><br>
+			
+			<select>
+					<option>HTML</option>
+					<option>CSS</option>
+					<option>JavaScript</option>
+					<option>jQuery</option>
+			</select>
+			<p id = "mod_sel">Módulo selecionado: HTML</p>
+			<input type = "submit" value = "Enviar">	
+		</form>
+
+		<script type="text/javascript">
+			$("form").submit(function() {
+				alert("Fomulário enviado com sucesso");
+			});
+
+			$("input:text").focus(function(event) {
+				$("this").css("background-color", "#ddd");
+			})
+			.blur(function() {
+				$("this").css("background-color", "#fff");
+			});
+
+			$("select").change(function() {
+				var txt = "Módulo selecionado: ";
+				$("select option: selected").each(function() {
+					txt += $(this).text()+" ";
+				});
+				$("#mod_sel").text(txt);
+			});
+		</script>
+	</body>
+
+</html>

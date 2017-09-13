@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title> CFB </title>
+		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+		
+		<style type="text/css">
+			#bloco {
+				width: 200px;
+				height: 200px;
+				background-color: #f00;
+			}
+		</style>
+
+	</head>
+	
+	<body>
+		<div id = "bloco">Arvore</div>
+		<p></p>
+
+		<script type="text/javascript">
+			$('#bloco').mouseenter(function() {
+				$("p").text("Mouse foi posicionado sobre a div");
+			})
+			.mouseleave(function() {
+				$("p").text("Mouse saiu de cima da div");
+			});		
+		</script>
+
+	</body>
+</html>

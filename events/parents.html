@@ -1,0 +1,30 @@
+<!--
+	o método parent retorna somente o elemento pai direto 
+	e o método parents retorna todos os elementos que sejam
+	anteriores ao elemento indicado.	
+-->
+<!DOCTYPE html>
+<html lang = "pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Parents</title>
+		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("div").css({"border": "1px solid #f00"});
+				$("li").parents().css({"border":"1px solid #f00"})
+			});
+		</script>
+
+	</head>
+	
+	<body>
+		<div>
+			<ol>
+				<li>Primeiro Item</li>
+				<li>Segundo Item</li>
+			</ol>
+		</div>
+	</body>
+</html>

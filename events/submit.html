@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Evento Submit</title>
+		
+		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('form').submit(function() {
+					alert("Formulário enviado com sucesso!");
+				});
+			});
+		</script>
+	
+	</head>
+	
+	<body>
+		<form>
+			<label>Nome:</label><br>
+			<input type = "text" id = "txt_nome"><br><br>
+			<label>Telefone:</label><br>
+			<input type = "text" id = "txt_fone"><br><br>
+			<input type = "submit" value = "enviar">
+		</form>
+	</body>
+
+</html>
